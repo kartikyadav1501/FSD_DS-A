@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align:center;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #68cedd7e;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #aae2fccf;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Tea</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Coffee</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>Sugar</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>Pulse</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <script>
+        const item={
+            Tea:450,
+            Coffee:600,
+            Sugar:700,
+            Pulse:100
+        }
+        let x=prompt("Enter your product");
+        let y=prompt("Enter your quantity");
+        if(item[x]){
+            document.write("Your product is:"+ x + "<br>");
+            document.write("Your quantity is:"+ y + "<br>");
+            document.write("Your total amount is:" + item[x]*y);
+        }
+        else{
+            document.write("Product not available")
+        }
+    </script>
+    <div class="box">
+        Your product is: <span id="product"></span><br>
+        Your quantity is: <span id="quantity"></span><br>
+        Your total amount is: <span id="total"></span>
+    </div>
+</body>
+</html>
