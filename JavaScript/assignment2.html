@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student=[{
+            name:"A",
+            branch:"B.Tech"
+        },
+        {
+            name:"B",
+            branch:"MCA"
+        },
+        {
+            name:"C",
+            branch:"B.Tech"
+        },
+        {
+            name:"D",
+            branch:"B.Tech"
+        },
+        {
+            name:"E",
+            branch:"MCA"
+        }
+        ];
+        let course=prompt("Enter Course Name:");
+        let students=student.filter((student)=>(student.branch==course));
+        for(let i=0;i<students.length;i++)
+        {
+            document.write(students[i].name+"<br>");
+        }
+    </script>
+</body>
+</html>
